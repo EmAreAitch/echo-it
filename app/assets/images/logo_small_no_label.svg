@@ -1,0 +1,43 @@
+<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Gradient for the radio body -->
+    <linearGradient id="gradBody" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#2c3e50"/>
+      <stop offset="100%" stop-color="#34495e"/>
+    </linearGradient>
+    <!-- Gradient for the dial -->
+    <linearGradient id="gradDial" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f39c12"/>
+      <stop offset="100%" stop-color="#d35400"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Radio Body -->
+  <rect x="8" y="16" width="48" height="32" rx="6" fill="url(#gradBody)"/>
+  
+  <!-- Dial -->
+  <circle cx="20" cy="32" r="8" fill="url(#gradDial)"/>
+  
+  <!-- Dial Indicator (tuning pointer) -->
+  <line x1="20" y1="32" x2="28" y2="24" stroke="#ecf0f1" stroke-width="2" stroke-linecap="round"/>
+  
+  <!-- Speaker/Grille Panel -->
+  <rect x="36" y="22" width="14" height="20" rx="2" fill="#ecf0f1" opacity="0.5"/>
+  <path d="M38 24h10M38 28h10M38 32h10M38 36h10" stroke="#bdc3c7" stroke-width="0.5"/>
+  
+  <!-- Dual-stroke Accent Waves -->
+  <!-- First Accent Wave -->
+  <g>
+    <!-- Outer dark stroke for contrast on light backgrounds -->
+    <path d="M46 10 Q48 14 46 18" stroke="#2c3e50" stroke-width="3" fill="none" stroke-linecap="round"/>
+    <!-- Inner light stroke for contrast on dark backgrounds -->
+    <path d="M46 10 Q48 14 46 18" stroke="#ecf0f1" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+  </g>
+  <!-- Second Accent Wave -->
+  <g>
+    <!-- Outer dark stroke -->
+    <path d="M50 10 Q52 14 50 18" stroke="#2c3e50" stroke-width="3" fill="none" stroke-linecap="round"/>
+    <!-- Inner light stroke -->
+    <path d="M50 10 Q52 14 50 18" stroke="#ecf0f1" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+  </g>
+</svg>
