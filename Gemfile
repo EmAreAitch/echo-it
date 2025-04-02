@@ -4,8 +4,8 @@ source "https://rubygems.org"
 gem "rails", "~> 8.0.1"
 # The modern asset pipeline for Rails [https://github.com/rails/propshaft]
 gem "propshaft"
-# Use sqlite3 as the database for Active Record
-gem "sqlite3", ">= 2.1"
+# Use pg as the database for Active Record
+gem "pg", "~> 1.1"
 # Use the Puma web server [https://github.com/puma/puma]
 gem "puma", ">= 5.0"
 # Use JavaScript with ESM import maps [https://github.com/rails/importmap-rails]
@@ -88,7 +88,11 @@ group :development, :test do
   gem "rubocop-rspec", "~> 2.0"
 end
 
-gem "solidus_paypal_commerce_platform", "~> 1.0"
+gem 'solidus_paypal_commerce_platform', git: 'https://github.com/solidusio/solidus_paypal_commerce_platform.git', ref: '66a2618e49d4cf23191282b67ac50902d7728022'
 
 gem "solidus_admin", ">= 0.2"
 gem 'turbolinks', '~> 5.0.0'
+
+gem "dotenv-rails", "~> 3.1"
+
+gem "cloudinary", "~> 2.3"
