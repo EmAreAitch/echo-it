@@ -85,7 +85,7 @@ group :development, :test do
   gem "rubocop", "~> 1.0"
   gem "rubocop-performance", "~> 1.5"
   gem "rubocop-rails", "~> 2.3"
-  gem "rubocop-rspec", "~> 2.0"
+  gem "rubocop-rspec", "~> 3.5"
 end
 
 gem 'solidus_paypal_commerce_platform', git: 'https://github.com/solidusio/solidus_paypal_commerce_platform.git', ref: '66a2618e49d4cf23191282b67ac50902d7728022'
