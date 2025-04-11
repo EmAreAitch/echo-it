@@ -2,12 +2,12 @@
 # See http://docs.solidus.io/Spree/AppConfiguration.html for details
 
 # Solidus version defaults for preferences that are not overridden
-Spree.load_defaults '4.5.0'
+Spree.load_defaults "4.5.0"
 
 Spree.config do |config|
   # Core:
   # Default currency for new sites
-  config.currency = "INR"
+  config.currency = Rails.env.development? ? "USD" : "INR"
 
   # Uncomment to stop tracking inventory levels in the application
   # config.track_inventory_levels = false
@@ -18,8 +18,8 @@ Spree.config do |config|
   # config.inventory_cache_threshold = 3
 
   # Configure adapter for attachments on products and taxons (use ActiveStorageAttachment or PaperclipAttachment)
-  config.image_attachment_module = 'Spree::Image::ActiveStorageAttachment'
-  config.taxon_attachment_module = 'Spree::Taxon::ActiveStorageAttachment'
+  config.image_attachment_module = "Spree::Image::ActiveStorageAttachment"
+  config.taxon_attachment_module = "Spree::Taxon::ActiveStorageAttachment"
 
   # Defaults
   # Permission Sets:
@@ -50,7 +50,7 @@ Spree.config do |config|
 end
 
 Spree::Backend::Config.configure do |config|
-  config.locale = 'en'
+  config.locale = "en"
 
   # Uncomment and change the following configuration if you want to add
   # a new menu item:
