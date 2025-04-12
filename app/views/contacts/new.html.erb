@@ -1,0 +1,39 @@
+<div class="contact max-w-4xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+  <!-- Hero Section -->
+  <section class="text-center mb-12">
+    <h1 class="font-bold text-5xl md:text-6xl mb-4">Contact Us</h1>
+    <p class="text-lg max-w-2xl mx-auto">
+      Have questions? We'd love to hear from you. Fill out the form below and we'll get back to you as soon as possible.
+    </p>
+  </section>
+
+  <!-- Contact Form -->
+  <section>
+    <%= form_with(url: contact_path, local: true, class: "space-y-6", scope: :contact) do |form| %>
+      <!-- Name Field -->
+      <div class="flex flex-col sm:flex-row sm:space-x-4">
+        <div class="w-full sm:w-1/2">
+          <%= form.label :name, "Your Name", class: "text-lg font-semibold" %>
+          <%= form.text_field :name, class: "w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-500", placeholder: "Enter your name", required: true %>
+        </div>
+
+        <!-- Email Field -->
+        <div class="w-full sm:w-1/2">
+          <%= form.label :email, "Your Email", class: "text-lg font-semibold" %>
+          <%= form.email_field :email, class: "w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-500", placeholder: "Enter your email", required: true %>
+        </div>
+      </div>
+
+      <!-- Message Field -->
+      <div class="w-full">
+        <%= form.label :message, "Your Message", class: "text-lg font-semibold" %>
+        <%= form.text_area :message, class: "w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-500", placeholder: "Write your message here", rows: 6, required: true %>
+      </div>
+
+      <!-- Submit Button -->
+      <div class="text-center">
+        <%= form.submit "Send Message", class: "btn button-primary py-3 px-6 text-white font-semibold rounded-lg" %>
+      </div>
+    <% end %>
+  </section>
+</div>

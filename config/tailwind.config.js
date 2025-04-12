@@ -23,32 +23,7 @@ module.exports = {
       serif: ['Source Serif', 'system-ui', 'serif'],
       'serif-md': ['"Source Serif Medium"', 'system-ui', 'serif'],
     },
-    fontSize: {
-      h1: ['4rem', '120%'],
-      h2: ['3.375rem', '125%'],
-      'h2.5': ['3rem', '125%'],
-      h3: ['2.5rem', '125%'],
-      h4: ['2rem', '125%'],
-      h5: ['1.75rem', '125%'],
-      h6: ['1.5rem', '125%'],
-      'body-lg': ['1.5rem', '150%'],
-      'body-22': ['1.375rem', '150%'],
-      'body-20': ['1.25rem', '140%'],
-      'body-md': ['1.125rem', '140%'],
-      body: ['1rem', '120%'],
-      'body-15.5': ['0.968rem', '120%'],
-      'body-sm': ['0.875rem', '120%'],
-      'body-xs': '0.75rem',
-      'body-2xs': '0.625rem',
-      eyebrow: [
-        '0.875rem',
-        {
-          lineHeight: '1',
-          letterSpacing: '0.07em',
-        },
-      ],
-      caption: ['0.75rem', '150%'],
-    },
+
     extend: {
       aspectRatio: {
         auto: "auto",
@@ -105,6 +80,32 @@ module.exports = {
       },
       height: {
         '1_col-3': '32%',
+      },
+      fontSize: {
+        h1: ['4rem', '120%'],
+        h2: ['3.375rem', '125%'],
+        'h2.5': ['3rem', '125%'],
+        h3: ['2.5rem', '125%'],
+        h4: ['2rem', '125%'],
+        h5: ['1.75rem', '125%'],
+        h6: ['1.5rem', '125%'],
+        'body-lg': ['1.5rem', '150%'],
+        'body-22': ['1.375rem', '150%'],
+        'body-20': ['1.25rem', '140%'],
+        'body-md': ['1.125rem', '140%'],
+        body: ['1rem', '120%'],
+        'body-15.5': ['0.968rem', '120%'],
+        'body-sm': ['0.875rem', '120%'],
+        'body-xs': '0.75rem',
+        'body-2xs': '0.625rem',
+        eyebrow: [
+          '0.875rem',
+          {
+            lineHeight: '1',
+            letterSpacing: '0.07em',
+          },
+        ],
+        caption: ['0.75rem', '150%'],
       },
       borderRadius: {
         '2xl': '2rem'

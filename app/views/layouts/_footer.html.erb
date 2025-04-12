@@ -1,34 +1,14 @@
-<footer class="wrapper mx-auto grid-container w-full">
-  <div class="col-span-full border-t-[1px] border-t-black dark:border-t-white py-16">
-    <div class="text-center col-span-full md:flex md:items-center md:justify-between md:col-start-2 md:col-span-10">
-      <div class="col-span-full mb-14 md:mb-0">
-        <%= image_tag "logo_full_with_label.svg", class: "mx-auto w-52 mb-7 dark:hidden" %>
-        <%= image_tag "logo_full_with_label_white.svg", class: "mx-auto w-52 mb-7 hidden dark:block" %>
-        <%= render partial: "shared/call_to_action", :locals => { :label => "Visit Solidus.io", :url => 'https://solidus.io', :target => '_blank', :additional_classes => "block mx-auto" } %>
-      </div>
-      <div class="col-span-full">
-        <%= render "shared/social_icons" %>
-      </div>
+<footer class="bg-gray-800 text-white py-6">
+  <div class="container mx-auto px-4">
+    <div class="flex flex-col sm:flex-row justify-between items-center">
+      <ul class="flex flex-col sm:flex-row space-y-2 sm:space-y-0 sm:space-x-6 text-sm">
+        <li><%= link_to 'About Us', pages_about_us_path, class: 'hover:text-gray-400' %></li>
+        <li><%= link_to 'Shipping', pages_shipping_path, class: 'hover:text-gray-400' %></li>
+        <li><%= link_to 'Return Policy', pages_return_path, class: 'hover:text-gray-400' %></li>
+        <li><%= link_to 'Privacy Policy', pages_privacy_path, class: 'hover:text-gray-400' %></li>
+        <li><%= link_to 'Contact Us', new_contact_path, class: 'hover:text-gray-400' %></li>
+      </ul>
+      <p class="text-xs mt-4 sm:mt-0">&copy; 2025 Echo IT. All Rights Reserved.</p>
     </div>
-    <%
-      available_locales = current_store.available_locales.map do |locale|
-        [
-          I18n.t('spree.i18n.this_file_language',
-          locale: locale,
-          default: locale.to_s,
-          fallback: false), locale
-        ]
-      end.sort
-    %>
-    <% if available_locales.many? %>
-      <div class="locale-selector"  data-controller="locale-selector">
-        <%= form_tag select_locale_path do %>
-          <div class="locale-selector__select-input select-input">
-            <%= label_tag :switch_to_locale, "#{t('spree.i18n.language')}:" %>
-            <%= select_tag(:switch_to_locale, options_for_select(available_locales, I18n.locale), data: { action: "locale-selector#submitForm", "locale-selector-target" => "selector" }) %>
-          </div>
-        <% end %>
-      </div>
-    <% end %>
   </div>
 </footer>
