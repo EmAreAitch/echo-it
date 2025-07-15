@@ -7,7 +7,7 @@ Spree.load_defaults "4.5.0"
 Spree.config do |config|
   # Core:
   # Default currency for new sites
-  config.currency = Rails.env.development? ? "USD" : "INR"
+  config.currency = "USD"
 
   # Uncomment to stop tracking inventory levels in the application
   # config.track_inventory_levels = false
