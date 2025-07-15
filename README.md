@@ -1,24 +1,70 @@
-# README
+# Echo It – E-Commerce App with Solidus
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+**Echo It** is a lightweight experimental e-commerce platform built with Ruby on Rails using the Solidus framework. The project showcases the ability to work with third-party e-commerce solutions and implement basic storefront and admin UI features using Solidus Starter Frontend.
 
-Things you may want to cover:
+---
 
-* Ruby version
+## 🚀 Features
 
-* System dependencies
+* **Solidus Integration**
+  Built using Solidus engine and its default sample data to simulate a real e-commerce experience.
 
-* Configuration
+* **Starter Frontend & Admin UI**
+  Uses Solidus Starter Frontend for storefront and Solidus Admin UI for backend management.
 
-* Database creation
+* **Sample Products**
+  Pre-seeded catalog with sample products from Solidus to demonstrate layout, cart, and checkout functionality.
 
-* Database initialization
+---
 
-* How to run the test suite
+## 🛠️ Tech Stack
 
-* Services (job queues, cache servers, search engines, etc.)
+* **Backend:** Ruby on Rails, Solidus
+* **Frontend:** Solidus Starter Frontend
+* **Database:** PostgreSQL
 
-* Deployment instructions
+---
 
-* ...
+## 🧲 Development Setup
+
+1. **Clone the repository**
+
+   ```bash
+   git clone https://github.com/your-username/echo-it.git
+   cd echo-it
+   ```
+
+2. **Install dependencies**
+
+   ```bash
+   bundle install   
+   ```
+
+3. **Set up database**
+
+   ```bash
+   rails db:setup
+   ```
+
+4. **Run the development server**
+
+   ```bash
+   bin/dev
+   ```
+
+---
+
+## 📌 Notes
+
+* This project is non-commercial and for demonstration purposes only.
+* Focused on showcasing integration with Solidus, not custom UI/UX or business logic.
+
+---
+
+## 📄 License
+
+This project is licensed under the MIT License.
+
+---
+
+> Built by [Md Rahib Hasan](mailto:dev.emareaitch@gmail.com)
