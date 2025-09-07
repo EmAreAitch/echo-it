@@ -91,7 +91,7 @@ end
 gem 'solidus_paypal_commerce_platform', git: 'https://github.com/solidusio/solidus_paypal_commerce_platform.git', ref: '66a2618e49d4cf23191282b67ac50902d7728022'
 
 gem "solidus_admin", ">= 0.2"
-gem 'turbolinks', '~> 5.0.0'
+gem 'turbolinks', '~> 5.2.1'
 
 gem "dotenv-rails", "~> 3.1"
 
